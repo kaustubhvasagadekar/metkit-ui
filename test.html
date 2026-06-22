@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@metkit/ui - Test</title>
+  <link rel="stylesheet" href="./dist/ui.css">
+  <script type="module" src="./dist/index.js"></script>
+</head>
+<body style="padding: 2rem; font-family: system-ui;">
+  <h1>@metkit/ui Component Test</h1>
+
+  <section style="margin: 2rem 0;">
+    <h2>Button</h2>
+    <mk-button>Primary</mk-button>
+    <mk-button variant="secondary">Secondary</mk-button>
+    <mk-button variant="danger">Danger</mk-button>
+    <mk-button variant="ghost">Ghost</mk-button>
+    <mk-button size="sm">Small</mk-button>
+    <mk-button size="lg">Large</mk-button>
+    <mk-button loading>Loading</mk-button>
+    <mk-button disabled>Disabled</mk-button>
+  </section>
+
+  <section style="margin: 2rem 0;">
+    <h2>Input</h2>
+    <mk-input label="Email" placeholder="you@example.com" helper-text="We'll never share your email."></mk-input>
+    <mk-input label="Password" type="password" error-message="Password must be at least 8 characters."></mk-input>
+  </section>
+
+  <section style="margin: 2rem 0;">
+    <h2>Card</h2>
+    <mk-card elevated>
+      <div slot="header"><strong>Card Title</strong></div>
+      <p>This is the card body content.</p>
+      <div slot="footer">Card Footer</div>
+    </mk-card>
+  </section>
+
+  <section style="margin: 2rem 0;">
+    <h2>Badge</h2>
+    <mk-badge>Default</mk-badge>
+    <mk-badge variant="primary">Primary</mk-badge>
+    <mk-badge variant="success">Success</mk-badge>
+    <mk-badge variant="warning">Warning</mk-badge>
+    <mk-badge variant="danger">Danger</mk-badge>
+  </section>
+
+  <section style="margin: 2rem 0;">
+    <h2>Icon</h2>
+    <mk-icon name="check"></mk-icon>
+    <mk-icon name="close"></mk-icon>
+    <mk-icon name="info"></mk-icon>
+    <mk-icon name="warning"></mk-icon>
+    <mk-icon name="search" size="lg"></mk-icon>
+    <mk-icon name="loading" size="xl"></mk-icon>
+  </section>
+
+  <section style="margin: 2rem 0;">
+    <h2>Tooltip</h2>
+    <mk-tooltip content="Hello from tooltip!">
+      <mk-button variant="secondary">Hover me</mk-button>
+    </mk-tooltip>
+  </section>
+</body>
+</html>
